@@ -1,0 +1,52 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{natbib}
+\usepackage{hyperref}
+
+\title{Estimating Extreme Daily Market Losses on the Johannesburg Stock Exchange using Extreme Value Theory}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This study applies Extreme Value Theory (EVT) to estimate extreme one-day losses on the Johannesburg Stock Exchange (JSE). We compare Block Maxima (GEV) and Peaks-Over-Threshold (GPD) approaches against empirical and Gaussian models, assessing 99\% and 99.5\% Value at Risk (VaR). 
+\end{abstract}
+
+\section{Introduction}
+% Context of JSE, the importance of extreme risk modeling, and limitations of normal distributions.
+
+\section{Data and Methodology}
+\subsection{Data Description}
+% Discussion of the JSE Top40 dataset, calculation of log returns $r_t$ and losses $L_t$.
+
+\subsection{Extreme Value Theory Framework}
+% Mathematical definitions of GEV (Block Maxima) and GPD (Peaks-Over-Threshold), including the role of the shape parameter $\xi$.
+
+\section{Exploratory Data Analysis}
+% Reference to return/loss time series, QQ-plots, and empirical CDFs.
+% \begin{figure}[h] \centering \includegraphics{...} \caption{...} \end{figure}
+
+\section{Model Fitting and Diagnostics}
+\subsection{Block Maxima (GEV)}
+\subsection{Peaks-Over-Threshold (GPD)}
+% Discussion of threshold selection using mean-excess plots.
+
+\section{Value at Risk (VaR) Estimation and Backtesting}
+% Comparison table of Empirical, Gaussian, and EVT VaR estimates.
+% \begin{table}[h] \centering \begin{tabular}{...} \end{tabular} \end{table}
+
+\section{Discussion and Limitations}
+% Addressing IID assumptions, volatility clustering, and small-sample tail uncertainty.
+
+\section{Conclusion}
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}
